@@ -1,0 +1,169 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #080C14;
+    --bg-surface: #0E1524;
+    --bg-elevated: #141D30;
+    --border-color: rgba(30, 41, 59, 0.8);
+    --accent-blue: #3B82F6;
+    --text-primary: #F8FAFC;
+    --text-secondary: #94A3B8;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    letter-spacing: -0.01em;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', 'Fira Code', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Subtle sleek scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.2);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.4);
+}
+
+/* ========================================================
+   EXECUTIVE PROFESSIONAL THEMES
+   ======================================================== */
+
+/* 1. Obsidian Sapphire (Default Dark Executive AI) */
+html.dark, html.theme-obsidian {
+  color-scheme: dark;
+  background-color: #080C14;
+  color: #F8FAFC;
+}
+
+/* 2. Zinc Midnight (Deep Tech Slate) */
+html.theme-zinc {
+  color-scheme: dark;
+  background-color: #09090B;
+  color: #FAFAFA;
+}
+html.theme-zinc .bg-\[\#0B0F17\],
+html.theme-zinc .bg-\[\#080C14\] {
+  background-color: #09090B !important;
+}
+html.theme-zinc .bg-slate-900,
+html.theme-zinc .bg-slate-900\/80,
+html.theme-zinc .bg-slate-900\/70,
+html.theme-zinc .bg-slate-900\/60 {
+  background-color: #121215 !important;
+  border-color: #27272A !important;
+}
+html.theme-zinc .bg-slate-950 {
+  background-color: #0D0D10 !important;
+  border-color: #1F1F23 !important;
+}
+
+/* 3. Editorial Swiss Light (Crisp Academic Print) */
+html.light, html.theme-light {
+  color-scheme: light;
+  background-color: #F8FAFC;
+  color: #0F172A;
+}
+
+html.light body,
+html.theme-light body {
+  background-color: #F8FAFC;
+  color: #0F172A;
+}
+
+html.light .bg-\[\#0B0F17\],
+html.light .bg-\[\#080C14\],
+html.theme-light .bg-\[\#0B0F17\],
+html.theme-light .bg-\[\#080C14\] {
+  background-color: #F8FAFC !important;
+}
+
+html.light .bg-\[\#090D14\],
+html.light .bg-\[\#070A0F\],
+html.theme-light .bg-\[\#090D14\],
+html.theme-light .bg-\[\#070A0F\] {
+  background-color: #F1F5F9 !important;
+}
+
+html.light .bg-slate-900,
+html.light .bg-slate-900\/90,
+html.light .bg-slate-900\/80,
+html.light .bg-slate-900\/70,
+html.light .bg-slate-900\/60,
+html.light .bg-slate-900\/50,
+html.theme-light .bg-slate-900,
+html.theme-light .bg-slate-900\/90,
+html.theme-light .bg-slate-900\/80,
+html.theme-light .bg-slate-900\/70,
+html.theme-light .bg-slate-900\/60,
+html.theme-light .bg-slate-900\/50 {
+  background-color: #FFFFFF !important;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px -1px rgba(0, 0, 0, 0.05);
+}
+
+html.light .bg-slate-950,
+html.light .bg-slate-950\/80,
+html.light .bg-slate-950\/70,
+html.light .bg-slate-950\/60,
+html.light .bg-slate-950\/50,
+html.light .bg-slate-950\/40,
+html.theme-light .bg-slate-950,
+html.theme-light .bg-slate-950\/80,
+html.theme-light .bg-slate-950\/70,
+html.theme-light .bg-slate-950\/60,
+html.theme-light .bg-slate-950\/50,
+html.theme-light .bg-slate-950\/40 {
+  background-color: #F8FAFC !important;
+}
+
+html.light .border-slate-800,
+html.light .border-slate-800\/80,
+html.light .border-slate-800\/60,
+html.theme-light .border-slate-800,
+html.theme-light .border-slate-800\/80,
+html.theme-light .border-slate-800\/60 {
+  border-color: #E2E8F0 !important;
+}
+
+html.light .border-slate-700,
+html.theme-light .border-slate-700 {
+  border-color: #CBD5E1 !important;
+}
+
+html.light .text-white,
+html.theme-light .text-white {
+  color: #0F172A !important;
+}
+
+html.light .text-slate-100,
+html.light .text-slate-200,
+html.light .text-slate-300,
+html.theme-light .text-slate-100,
+html.theme-light .text-slate-200,
+html.theme-light .text-slate-300 {
+  color: #334155 !important;
+}
+
+html.light .text-slate-400,
+html.theme-light .text-slate-400 {
+  color: #64748B !important;
+}
+
+html.light .text-slate-500,
+html.theme-light .text-slate-500 {
+  color: #94A3B8 !important;
+}
